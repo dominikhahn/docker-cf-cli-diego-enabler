@@ -10,7 +10,7 @@ WORKDIR ["/workspace"]
 ENV GOPATH /usr/local/bin
 
 # Install openssl
-  RUN apk --update add --quiet --no-cache openssl
+RUN apk --update add --quiet --no-cache openssl
 
 # Install build dependencies
 RUN apk --update add --quiet --no-cache --virtual build-dependencies go git zip
